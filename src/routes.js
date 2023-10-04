@@ -2,6 +2,13 @@ const { addNoteHandler, getAllNotesHandler, getNoteByIdHandler, editNoteByIdHand
 
 const routes = [
   {
+    method: "GET",
+    path: "/",
+    handler: (request, h) => {
+      return "Hello World!";
+    },
+  },
+  {
     method: "POST",
     path: "/notes",
     handler: addNoteHandler,
